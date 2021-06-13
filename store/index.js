@@ -8,9 +8,14 @@ const createStore = () => {
         // message 任意　stateの値は常にfunction
       }
     },
+    // mutations: {
+    //   updateMessage: function (state) {
+    //     state.message = 'Updeted!'
+    //   },
+    // },
     mutations: {
-      updateMessage: function (state) {
-        state.message = 'Updeted!'
+      updateMessage: function (state, payload) {
+        state.message = payload
       },
     },
   })
